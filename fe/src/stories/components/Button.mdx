@@ -1,0 +1,60 @@
+import { Meta, Story, Canvas } from '@storybook/blocks';
+import ButtonMeta, { Default, Secondary, Outline } from './Button.stories.tsx';
+
+<Meta of={ButtonMeta} />
+
+# Button Component
+
+O componente `Button` é utilizado para renderizar botões em diferentes variantes e tamanhos, oferecendo flexibilidade para diversos cenários de uso.
+
+## Propriedades
+
+### Variantes
+
+- **default**: Estilo padrão do botão.
+- **destructive**: Estilo para ações destrutivas.
+- **outline**: Botão com borda, sem preenchimento.
+- **secondary**: Estilo secundário.
+- **ghost**: Botão fantasma, sem preenchimento ou borda.
+- **link**: Estilo de link, sem preenchimento ou borda.
+
+### Tamanhos
+
+- **default**: Tamanho padrão.
+- **sm**: Botão pequeno.
+- **lg**: Botão grande.
+- **icon**: Botão para ícones.
+
+### Propriedades Adicionais
+
+- **asChild**: Renderiza o botão como um elemento filho de outro componente.
+- **disabled**: Desabilita o botão.
+
+## Exemplo de Uso
+
+### Botão Padrão
+
+```jsx
+<Button variant="default">Default</Button>
+<Canvas>
+  <Story name="Default">
+    <Default />
+  </Story>
+</Canvas>
+Botão Secundário
+
+<Button variant="secondary">Secondary</Button>
+<Canvas>
+  <Story name="Secondary">
+    <Secondary />
+  </Story>
+</Canvas>
+Botão com Borda
+
+<Button variant="outline">Outline</Button>
+<Canvas>
+  <Story name="Outline">
+    <Outline />
+  </Story>
+</Canvas>
+```
